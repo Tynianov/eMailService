@@ -1,0 +1,56 @@
+body{
+   background-color: rgb(253,204,234);
+}
+
+#email{
+  text-align: center;
+}
+
+#header{
+     text-align: center;
+     color: #000000;
+     font-family: 'Oswald';
+     font-size: 50px;
+     margin-top: 80px;
+     margin-bottom: 50px;
+     margin-right: 150px;
+     margin-left: 80px;
+}
+
+#email{
+  text-align: center;
+}
+
+#email input[type=text]{
+  font-style: normal;
+  font-size: 20px;
+  border-style: double;
+  margin-bottom: 50px;
+
+}
+
+#p1{
+  text-align: center;
+}
+
+#text {
+  font-size: 30px;
+  height: 250px;
+  width: 850px;
+}
+
+#button{
+    text-align: center;
+}
+
+#button input[type=submit]{
+  background: rgb(253,204,234);
+  height: 50px;
+  width: 150px;
+  border-style: outset;
+  border-width: 3px;
+  border-color: rgb(95, 91, 78);
+  font-size: 30px;
+  margin-top: 50px;
+  font-family: "Times New Roman", Times, serif
+}

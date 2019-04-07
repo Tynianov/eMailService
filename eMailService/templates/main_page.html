@@ -1,0 +1,40 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+    <!--<meta charset="UTF-8">-->
+    <!--<title>Title</title>-->
+    <!--<link rel="stylesheet" href="styles.css">-->
+<!--</head>-->
+<!--<body>-->
+    <!--<form method = "POST" action = "{{ url_for('form_render') }}">-->
+    <!--<header id="header" text-align: centre><b>Send anonymous message to someone you love &#9829</b></header>-->
+        <!--{{ form.csrf_token }}-->
+        <!--<p id = 'email'>{{ form.email }}</p>-->
+        <!--<p id = 'message'>{{ form.message }}</p>-->
+        <!--<p id = 'button'><input type="submit" value="Send"></p>-->
+    <!--</form>-->
+<!--</body>-->
+<!--</html>-->
+
+{% extends "bootstrap/base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}
+Send sweet words
+{% endblock %}
+
+{% block styles %}
+{{super()}}
+<link rel="stylesheet" href="{{url_for('.static', filename='main_page_style.css')}}">
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <form method="post" action="/">
+            {{ form.csrf_token() }}
+            {{ wtf.form_field(form.email) }}
+            {{ wtf.form_field(form.message) }}
+            <input class="btn btn-primary" type="submit" value="Send">
+    </form>
+</div>
+{% endblock %}
