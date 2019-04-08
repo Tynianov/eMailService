@@ -3,7 +3,7 @@ from datetime import datetime
 
 def open_connection():
 
-    connection = connect(host='emailsdb.c5npj6wo1rgt.us-east-1.rds.amazonaws.com',user='tynianov',password='Sasha99ty',db='emails')
+    connection = connect(host='host',user='user',password='password',db='database')
     return connection
 
 def insert(connection,email,message):
